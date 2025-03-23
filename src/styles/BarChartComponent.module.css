@@ -1,0 +1,11 @@
+.topExpenses {
+    display: flex;
+    flex-direction: column;
+}
+
+.barComponent {
+  background-color: white;
+  color: black;
+  width: 30rem;
+  height: 15rem;
+}

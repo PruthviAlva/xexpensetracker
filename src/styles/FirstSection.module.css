@@ -1,0 +1,9 @@
+.FirstSection {
+  background-color: rgba(98, 98, 98, 1);
+  border-radius: 10px;
+  height: 15rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 1rem;
+}

@@ -1,0 +1,11 @@
+.recentTransactions {
+    display: flex;
+    flex-direction: column;
+}
+
+.expensesList {
+    background-color: white;
+    color: black;
+    width: 47rem;
+    height: 15rem;
+}
