@@ -2,8 +2,6 @@ import React, { useEffect, useState } from "react";
 import Modal from "react-modal";
 import { useSnackbar } from 'notistack'
 
-import { saveToLocalStorage } from "../utils/localStorageUtils";
-
 import styles from '../styles/Card.module.css';
 
 const ExpenseForm = ({ editID, expenseList, setExpenseList, isOpen, setIsOpen, balance, setBalance }) => {

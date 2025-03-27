@@ -1,8 +1,5 @@
-import { useEffect } from "react";
-
 import RecentTransactions from './RecentTransactions';
 import BarChartComponent from './BarChartComponent';
-import { saveToLocalStorage, getFromLocalStorage } from "../utils/localStorageUtils";
 
 import styles from '../styles/SecondSection.module.css';
 

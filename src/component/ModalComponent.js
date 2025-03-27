@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Modal from "react-modal";
+import { useSnackbar } from 'notistack';
 
 import { saveToLocalStorage } from "../utils/localStorageUtils";
 
@@ -7,6 +8,7 @@ import styles from '../styles/Card.module.css';
 
 const ModalComponent = ({ text, modalIsOpen, closeModal, balance, setBalance, addExpense }) => {
 
+    const { enqueueSnackbar } = useSnackbar();
    // Wallet Balance
     const [incomeAmount, setIncomeAmount] = useState("");
     
@@ -21,7 +23,7 @@ const ModalComponent = ({ text, modalIsOpen, closeModal, balance, setBalance, ad
         const amount = parseInt(incomeAmount);
 
         if (!amount || amount <= 0) {
-            alert("Please enter a valid income amount.");
+            enqueueSnackbar("Please enter a valid income amount.", { variant: "warning" });
             return;
         }
 
@@ -39,17 +41,17 @@ const ModalComponent = ({ text, modalIsOpen, closeModal, balance, setBalance, ad
         const expenseAmount = parseInt(amount);
 
         if (!title || !amount || !category || !date) {
-            alert("All fields are required.");
+            enqueueSnackbar("All fields are required.", { variant: "warning" });
             return;
         }
 
         if (expenseAmount <= 0) {
-            alert("Amount must be greater than zero.");
+            enqueueSnackbar("Amount must be greater than zero.", { variant: "warning" });
             return;
         }
 
         if (expenseAmount > balance) {
-            alert("Insufficient wallet balance!");
+            enqueueSnackbar("Insufficient wallet balance!", { variant: "warning" });
             return;
         }
 
