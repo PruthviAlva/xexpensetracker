@@ -1,0 +1,21 @@
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.pagination button {
+  color: black;
+  border-radius: 20px;
+  width: 3rem;
+  height: 3rem;
+}
+
+.pagination p {
+  background-color: rgba(67, 150, 123, 1);
+  text-align: center;
+  font-size: 2rem;
+  width: 3rem;
+  height: 3rem;
+}

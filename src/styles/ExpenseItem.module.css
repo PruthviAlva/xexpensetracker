@@ -1,3 +1,15 @@
+@media (max-width: 800px) {
+  .expenseItem {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f8f8f8;
+    width: 38rem;
+    padding: 10px;
+    border-radius: 5px;
+    align-items: center;
+  }
+}
+
 .expenseItem {
   display: flex;
   justify-content: space-between;
@@ -6,6 +18,53 @@
   margin: 5px 0;
   border-radius: 5px;
   align-items: center;
+}
+
+.cardInner {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.cardIcon {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 2rem;
+  width: 3rem;
+  height: 3rem;
+}
+
+.cardInfo p {
+  color: grey;
+}
+
+.cardPrice {
+  font-size: 1.5    rem;
+  color: rgba(244, 187, 74, 1);
+}
+
+.cardButtonWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.cardButtonWrapper button {
+  border-radius: 15px;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.cardDelete {
+  background: rgba(255, 62, 62, 1);
+  color: white;
+  font-size: 1.6rem;
+}
+
+.cardEdit {
+  background: rgba(244, 187, 74, 1);
+  color: white;
+  font-size: 1.6rem;
 }
 
 .deleteButton {

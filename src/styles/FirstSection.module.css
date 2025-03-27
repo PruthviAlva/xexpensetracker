@@ -7,3 +7,17 @@
   align-items: center;
   margin-bottom: 1rem;
 }
+
+@media (max-width: 800px) {
+  .FirstSection {
+    background-color: rgba(98, 98, 98, 1);
+    border-radius: 10px;
+    gap: 2rem;
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+}

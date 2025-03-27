@@ -1,11 +1,26 @@
 .recentTransactions {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 800px) {
+  .recentTransactions {
     display: flex;
     flex-direction: column;
+  }
+
+  .expensesList {
+    background-color: white;
+    color: black;
+    width: 20px;
+    height: 28rem;
+  }
+  
 }
 
 .expensesList {
-    background-color: white;
-    color: black;
-    width: 47rem;
-    height: 15rem;
+  background-color: white;
+  color: black;
+  width: 42rem;
+  height: 28rem;
 }

@@ -5,7 +5,7 @@ import { saveToLocalStorage } from "../utils/localStorageUtils";
 
 import styles from '../styles/Card.module.css';
 
-const ModalComponent = ({ text, modalIsOpen, closeModal, balance, setBalance, addExpense, setDisplayAmount, displayAmount }) => {
+const ModalComponent = ({ text, modalIsOpen, closeModal, balance, setBalance, addExpense }) => {
 
    // Wallet Balance
     const [incomeAmount, setIncomeAmount] = useState("");
@@ -62,11 +62,6 @@ const ModalComponent = ({ text, modalIsOpen, closeModal, balance, setBalance, ad
         }
 
         addExpense(newExpense);
-        setDisplayAmount((prevAmount) => {
-            const newValue = prevAmount + expenseAmount;
-            saveToLocalStorage("expenseAmount", newValue);
-            return newValue;
-        });
 
         setTitle("");
         setAmount("");

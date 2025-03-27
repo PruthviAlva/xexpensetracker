@@ -5,7 +5,7 @@ import ModalComponent from "./ModalComponent";
 
 import styles from '../styles/Card.module.css';
 
-const Card = ({ text, balance, setBalance, addExpense, displayAmount, setDisplayAmount }) => {
+const Card = ({ text, balance, setBalance, addExpense, expenses }) => {
 
     const [modalIsOpen, setModalIsOpen] = useState(false);
     const openModal = () => setModalIsOpen(true);
@@ -20,7 +20,7 @@ const Card = ({ text, balance, setBalance, addExpense, displayAmount, setDisplay
                 </div>
             ) : (
                 <div className={styles.cardContainer}>
-                    {text}: ₹{displayAmount}
+                    {text}: ₹{expenses}
                     <button type="button" onClick={openModal} className={styles.addExpenseButton}>+ Add Expense</button>
                 </div>
             )}
@@ -32,8 +32,6 @@ const Card = ({ text, balance, setBalance, addExpense, displayAmount, setDisplay
                 balance={balance}
                 setBalance={setBalance}
                 addExpense={addExpense}
-                displayAmount={displayAmount}
-                setDisplayAmount={setDisplayAmount}
             />
         </>
     )
