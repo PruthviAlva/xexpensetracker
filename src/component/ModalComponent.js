@@ -92,7 +92,7 @@ const ModalComponent = ({ text, modalIsOpen, closeModal, balance, setBalance, ad
                             className={styles.input}
                         />
                         <button type="submit" className={styles.submitButton}>
-                            Add Balance
+                           + Add Balance
                         </button>
                         <button onClick={closeModal} className={styles.closeButton}>
                             Close
@@ -152,7 +152,7 @@ const ModalComponent = ({ text, modalIsOpen, closeModal, balance, setBalance, ad
                             />
                         </div>
                         <div style={{ display: 'flex', gap: '1rem' }}>
-                            <button type="submit" className={styles.submitButton}>Add Expense</button>
+                            <button type="submit" className={styles.submitButton}>+ Add Expense</button>
                             <button onClick={closeModal} className={styles.closeButton}>
                                 Cancel
                             </button>

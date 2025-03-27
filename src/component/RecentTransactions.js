@@ -52,7 +52,7 @@ function RecentTransactions({ expenseList, editExpensList, balance, setBalance }
 
     return (
         <div className={styles.recentTransactions}>
-            <h1>Recent Transactions</h1>
+            <h2>Recent Transactions</h2>
             {expenseList.length > 0 ?
                 <div className={styles.expensesList}>
                     <div>
